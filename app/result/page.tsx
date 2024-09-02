@@ -1,17 +1,27 @@
 // pages/result.tsx
 'use client'
 
-import { useRouter, useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+
 import SolanaSuperChat from "@/components/solana-super-chat";
 
 
-export default function Page() {
-    return <SolanaSuperChat />
-}
+// export default function Page() {
+//     return <SolanaSuperChat />
+// }
+import React, { Suspense } from 'react';
 
+// Component that uses `useSearchParams`
+const ResultPage = () => {
+    // Your useSearchParams logic here
+};
+
+const Page = () => (
+    <Suspense fallback={<div>Loading...</div>}>
+        <SolanaSuperChat />
+    </Suspense>
+);
+
+export default Page;
 // pages/index.tsx
 // export default function Result() {
 //     const router = useRouter()
