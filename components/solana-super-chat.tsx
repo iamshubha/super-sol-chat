@@ -117,7 +117,7 @@ export default function Component() {
                         <h3 className="font-semibold">{chat.sender}</h3>
                         <p className="text-sm text-purple-300 flex items-center">
                           <Rocket className="h-4 w-4 mr-1 text-yellow-400" />
-                          INR - {chat.amount.toFixed(2)} Rupee in SOL
+                          Approx INR - {chat.amount.toFixed(2)} Rupee in SOL
                         </p>
                       </div>
                     </div>
